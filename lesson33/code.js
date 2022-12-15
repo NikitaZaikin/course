@@ -5,7 +5,7 @@
 // console.log(arr);
 
 
-const arr = [ 1, 2, 3, 6, 8];
+// const arr = [ 1, 2, 3, 6, 8];
 
 // arr[99] = 0;                   //нарушение правил
 // console.log(arr.length);
@@ -33,5 +33,16 @@ const arr = [ 1, 2, 3, 6, 8];
 
 
 const str = prompt('', '');
-const products = str.split(', ');
-console.log(products);
+const products = str.split(', ');   // .split(и внутри указываем(в виде строки) с какой точки обрезать на массивы )
+// console.log(products);
+products.sort();      // sort всегда сортирует строки. Цифровой тип данных сортирует посимвольно [2, 13, 26, 8, 10], остсортирует как [10, 13, 2, 26, 8]
+console.log(products.join('; '));   // join('элемент который будет добавляться между седенёнными строками')
+
+
+const arr = [2, 13, 26, 8, 10];
+arr.sort(compareNum);
+console.log(arr);
+                                       // если добавить функцию в метод сорт, то тогда цифренное значение он будет выводить в правильно порядке
+function compareNum(a, b) {
+    return a-b;
+}                                       // результат [2, 8, 10, 13, 26]
