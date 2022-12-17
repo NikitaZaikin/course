@@ -58,3 +58,34 @@
 // }
 
 
+
+// const someString = 'This is some strange string';
+
+// function reverse(str) {
+//     if (typeof(str) !== 'string') {
+//         return 'Ошибка!';
+//     } else {
+//         let res = str.split('').reverse().join('');
+//         return res;
+//     }
+// }
+
+// const baseCurrencies = ['USD', 'EUR'];
+// const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+// function availableCurr(arr, missingCurr) {
+//     if (arr.length === 0) {
+//         return 'Нет доступных валют';
+//     } else {
+//         let a = 'Доступные валюты:\n';
+//         for (let value of arr) {
+//             if (missingCurr === value) {
+//                 continue;
+//             } else {
+//                 a += value;
+//             }
+//             a += '\n';
+//         }
+//         console.log(a);
+//         return a;
+//     }
+// }
