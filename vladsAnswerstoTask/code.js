@@ -89,3 +89,58 @@
 //         return a;
 //     }
 // }
+
+
+
+// const shoppingMallData = {
+//     shops: [
+//         {
+//             width: 10,
+//             length: 5
+//         },
+//         {
+//             width: 15,
+//             length: 7
+//         },
+//         {
+//             width: 20,
+//             length: 5
+//         },
+//         {
+//             width: 8,
+//             length: 10
+//         }
+//     ],
+//     height: 5,
+//     moneyPer1m3: 30,
+//     budget: 50000
+// }
+
+
+// function isBudgetEnough(data) {
+//     const {shops,budget, moneyPer1m3} = data;
+//     let mainSquare = 0;
+//     let mainVolume = 0;
+//     let res = '';
+//     for (let i = 0; i < shops.length; i++) {
+//         const {width, length} = data.shops[i];
+//         let tempSquare = width * length;
+//         // console.log(b);
+//         mainSquare += tempSquare;
+//     }
+//     for (let j = 0; j < shops.length; j++) {
+//         const {width, length} = data.shops[j];
+//         const {height} = data;
+//         let tempVolume = width * height * length;
+//         mainVolume += tempVolume;
+//     }
+//     if (mainVolume * moneyPer1m3 > budget) {
+//         res += 'Бюджета недостаточно';
+//         console.log(res);
+//         return res;
+//     } else {
+//         res += 'Бюджета достаточно';
+//         console.log(res);
+//         return res;
+//     }
+// }

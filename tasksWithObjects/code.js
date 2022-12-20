@@ -104,37 +104,99 @@
 
 
 
-const someString = 'This is some strange string';
+// const someString = 'This is some strange string';
 
-function reverse(str) {
-    if (typeof str !== 'string'){
-        str = 'Ошибка';
-    } 
-    console.log(str.split('').reverse().join(''));
-}
+// function reverse(str) {
+//     if (typeof str !== 'string'){
+//         str = 'Ошибка';
+//     } 
+//     console.log(str.split('').reverse().join(''));
+// }
 
-reverse(someString);
+// reverse(someString);
 
-const baseCurrencies = ['USD', 'EUR'];
-const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+// const baseCurrencies = ['USD', 'EUR'];
+// const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
 
-function availableCurr(arr, missingCurr) {
-    let str = '';
-    arr.length === 0 ? str = 'Нет доступных валют' : str = 'Доступные валюты:\n';
+// function availableCurr(arr, missingCurr) {
+//     let str = '';
+//     arr.length === 0 ? str = 'Нет доступных валют' : str = 'Доступные валюты:\n';
 
-    arr.forEach(function(curr, i) {
-        if (curr !== missingCurr) {
-            str += `${curr}\n`;
-        }
-    });
+//     arr.forEach(function(curr, i) {
+//         if (curr !== missingCurr) {
+//             str += `${curr}\n`;
+//         }
+//     });
 
-    // Или
-    // for (let i = 0; i < arr.length; i++) {
-    //     if (arr[i] === missingCurr) {
-    //         continue;
-    //     }
-    //     str += `${arr[i]}\n`;
-    // }
+//     // Или
+//     // for (let i = 0; i < arr.length; i++) {
+//     //     if (arr[i] === missingCurr) {
+//     //         continue;
+//     //     }
+//     //     str += `${arr[i]}\n`;
+//     // }
 
-    return str;
+//     return str;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const shoppingMallData = {
+//     shops: [
+//         {
+//             width: 10,
+//             length: 5
+//         },
+//         {
+//             width: 15,
+//             length: 7
+//         },
+//         {
+//             width: 20,
+//             length: 5
+//         },
+//         {
+//             width: 8,
+//             length: 10
+//         }
+//     ],
+//     height: 5,
+//     moneyPer1m3: 30,
+//     budget: 50000
+// }
+
+// function isBudgetEnough(data) {
+//     let volume = 0;
+//     let square = 0;
+
+//     data.shops.forEach(shop => {
+//         square += shop.width * shop.length;
+//     });
+
+//     volume += data.height * square;
+
+//     if (volume * data.moneyPer1m3 <= data.budget){
+//         return 'Бюджета достаточно';
+//     } else {
+//         return 'Бюджета недостаточно';
+//     }
+// }
+
+// isBudgetEnough(shoppingMallData);
+
+
+const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+function sortStudentsByGroups(arr) {
+    arr/sortStudentsByGroups()
 }
