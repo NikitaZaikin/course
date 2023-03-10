@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetMovies</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+      
+        <div class="header__search">
+            <form action="#">
+                <input type="text" list='varieties' placeholder="Поиск">
+            </form>
+            <div class="header__logo">
+                <img src="img/favicon.svg" alt="logo">
+            </div>
+        </div>
+       
+    </header>
+    <main class="promo">
+        <div class="promo__menu">
+            <nav class="promo__menu-list">
+                <ul class="tabs">
+                    <li><a class="promo__menu-item promo__menu-item_active">База Данных</a></li>
+                    <li><a class="promo__menu-item">Фильмы</a></li>
+                    <li><a class="promo__menu-item">Сериалы</a></li>
+                    <li><a class="promo__menu-item">Мультфильмы</a></li>
+                    <li><a class="promo__menu-item">Трейлеры</a></li>
+                </ul>
+            </nav>
+            <div class="promo__menu-modal">
+                <button data-modal class="promo__menu-item contact-us btn btn_white" >Связаться с нами</button>
+            </div>
+        </div>
+
+        <!--Data Base tab-->
+        <div class="promo__content">
+            <div class="promo__bg">
+                <div class="promo__genre">КОМЕДИЯ</div>
+                <div class="promo__title">МАРСИАНИН</div>
+                <div class="promo__descr">ИСТОРИЯ ЧЕЛОВЕКА, ВЫЖИВШЕГО НА ЧУЖОЙ ПЛАНЕТЕ В ОДИНОЧКУ</div>
+                <div class="promo__ratings">
+                    <span>IMDb: 8.0</span>
+                    <span>Кинопоиск: 7.7</span>
+                </div>
+            </div>
+            <div class="promo__interactive">
+                <div>
+                    <div class="promo__interactive-title">ПРОСМОТРЕННЫЕ ФИЛЬМЫ</div>
+                    <ul class="promo__interactive-list">
+                        <li class="promo__interactive-item">ЛОГАН
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ЛИГА СПРАВЕДЛИВОСТИ
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ЛА-ЛА ЛЭНД
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ОДЕРЖИМОСТЬ
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">СКОТТ ПИЛИГРИМ ПРОТИВ...
+                            <div class="delete"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <form class="add">
+                        <div class="promo__interactive-title">ДОБАВИТЬ НОВЫЙ ФИЛЬМ</div>
+                        <span>Введите название фильма</span>
+                        <input class="adding__input" type="text" placeholder="Что уже посмотрено?">
+                        <span>Сделать его любимым?</span>
+                        <input type="checkbox">
+                        <span class="yes">Да!</span>
+                        <button>Подтвердить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--Film tab-->
+        <div class="promo__content hide">
+
+            <header class="header">
+                <div class="header_content">
+                    <a href="index.html" class="header_logo"></a>
+                    <form>
+                        <input type="text" class="header_search" placeholder="Поиск">
+                    </form>
+                </div>
+            </header>
+
+            <div class="location">
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://image.tmdb.org/t/p/w500/3mIMt3wOQ5DDtrUsuI5T5yGmCti.jpg" class="movie_cover" alt="Годзилла против Конга">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">8.6</div>
+                    </div>
+
+                    <div class="movie_info">
+                        <div class="movie_title">Годзилла против Конга</div>
+                        <div class="movie_category">боевик, фантастика</div> 
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/11/9/lfc24adaa6bf9le85o65x.jpg" class="movie_cover" alt="Чёрная Пантера: Ваканда навеки">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">6.37</div> 
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Чёрная Пантера: Ваканда навеки</div>
+                        <div class="movie_category">		Фантастика, Боевики, Триллеры, Драмы, Приключения</div>
+                    </div>  
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2023/1/3/q5f7c27fd6347qb70l90z.jpg" class="movie_cover" alt="М3ГАН">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">6.12</div> 
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">М3ГАН</div>
+                        <div class="movie_category">			Фантастика, Триллеры, Ужасы</div>
+                    </div>  
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/10/15/lb5a1251f8f33me83b76b.jpg" class="movie_cover" alt="Меню">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">6.81</div> 
+                    </div>
+                
+
+                    <div class="movie_info">
+                        <div class="movie_title">Меню</div>
+                        <div class="movie_category">			Триллеры, Ужасы, Комедии</div>
+                    </div>  
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/12/9/sad39ab198857mo98t85w.jpg" class="movie_cover" alt="Освобождение">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">6.81</div> 
+                    </div>
+
+                    <div class="movie_info">
+                        <div class="movie_title">Освобождение</div>
+                        <div class="movie_category">		Боевики, Триллеры</div>
+                    </div> 
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2021/1/24/td246140e6164bv16p39a.jpeg" class="movie_cover" alt="Уличный кот по кличке Боб">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">7.72</div> 
+                    </div>
+                
+
+                    <div class="movie_info">
+                        <div class="movie_title">Уличный кот по кличке Боб</div>
+                        <div class="movie_category">		Драмы, Комедии, Семейные, Биографические</div>
+                    </div>  
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/10/12/zc5a92025423eyx42j19v.jpg" class="movie_cover" alt="Жестокая ночь">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">6.6</div>
+                    </div>
+                
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Жестокая ночь</div>
+                        <div class="movie_category">		Боевики, Триллеры, Комедии, Криминал, Ужасы</div>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/12/7/tc8015f20deedid17i53z.jpg" class="movie_cover" alt="Всевидящее око">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">6.43</div> 
+                    </div>
+
+                    <div class="movie_info">
+                        <div class="movie_title">Всевидящее око </div>
+                        <div class="movie_category">		Детективы, Триллеры, Криминал</div>
+                    </div> 
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/11/11/o30626de425ddcx23c59u.jpg" class="movie_cover" alt="Достать ножи: Стеклянная луковица">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">6.98</div> 
+                    </div>
+                
+
+                    <div class="movie_info">
+                        <div class="movie_title">Достать ножи: Стеклянная луковица </div>
+                        <div class="movie_category">			Детективы, Драмы, Комедии, Триллеры, Криминал</div>
+                    </div> 
+                </div>
+
+            </div>
+        </div>
+        <!--Serial tab-->
+        <div class="promo__content show fade">
+            <header class="header">
+                <div class="header_content">
+                    <a href="index.html" class="header_logo"></a>
+                    <form>
+                        <input type="text" class="header_search" placeholder="Поиск">
+                    </form>
+                </div>
+            </header>
+
+            <div class="location">
+                <div class="movie" >
+                        <div class="movie_cover-inner">
+                            <img src="https://static.hdrezka.ac/i/2022/11/17/za04bbc508f09mh92w69c.jpg" class="movie_cover" alt="Вампиры средней полосы">
+                            <div class="movie_cover--darkened"></div>
+                            <div class="movie_average movie_average--green">8.21</div> 
+                        </div>
+                    
+
+                    <div class="movie_info">
+                        <div class="movie_title">Вампиры средней полосы</div>
+                        <div class="movie_category">	Фэнтези, Детективы, Комедии</div>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2021/4/23/cab5ce633279bxe85k18q.jpeg" class="movie_cover" alt="Во все тяжкие">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">8.88</div> 
+                    </div>
+                
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Во все тяжкие</div>
+                        <div class="movie_category">		Триллеры, Криминал, Драмы</div>
+                    </div> 
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2023/1/19/v13ba9e6861ecdu71e86t.jpg" class="movie_cover" alt="Одни из нас">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">8.71</div> 
+                    </div>
+                
+
+                    <div class="movie_info">
+                        <div class="movie_title">Одни из нас</div>
+                        <div class="movie_category">		Приключения, Фантастика, Драмы, Боевики, Триллеры, Ужасы</div>
+                    </div>   
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2021/8/15/v7592ffc0208ani41t17j.jpg" class="movie_cover" alt="Ходячие мертвецы">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">7.99</div> 
+                    </div>
+                
+
+                    <div class="movie_info">
+                        <div class="movie_title">Ходячие мертвецы</div>
+                        <div class="movie_category">		Ужасы, Триллеры, Драмы, Приключения</div>
+                    </div>  
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/10/28/qa09cb6d9a116fm29x63q.jpg" class="movie_cover" alt="Король Талсы">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">7.81</div> 
+                    </div>
+                
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Король Талсы</div>
+                        <div class="movie_category">			Драмы, Криминал</div>
+                    </div>  
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/5/23/k93facaed3e13gy44r43v.jpg" class="movie_cover" alt="Пацаны">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">8.3</div> 
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Пацаны</div>
+                        <div class="movie_category">		Боевики, Драмы, Криминал, Комедии, Фантастика</div>
+                    </div> 
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2020/12/26/b3b9a8138c196sm42q91d.jpg" class="movie_cover" alt="Люцифер">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">7.6</div>
+                    </div>
+                
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Люцифер</div>
+                        <div class="movie_category">		Фэнтези, Драмы, Криминал</div>
+                    </div> 
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/11/25/v0e362b8d4e5dkc15i53b.jpg" class="movie_cover" alt="Уэнздей">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">8.1</div> 
+                    </div>
+                
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Уэнздей </div>
+                        <div class="movie_category">		Фэнтези, Ужасы, Комедии, Приключения, Детективы, Семейные</div>
+                    </div> 
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/7bbd225f-e6db-4326-b600-1ac294cf9d99/600x900" class="movie_cover" alt="Офис">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">8.6</div> 
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Офис </div>
+                        <div class="movie_category"> Комедии, Для взрослых</div>
+                    </div> 
+                </div> 
+
+            </div> 
+        </div>
+        <!--Cartoon tab-->
+        <div class="promo__content hide">
+            <header class="header">
+                <div class="header_content">
+                    <a href="index.html" class="header_logo"></a>
+                    <form>
+                        <input type="text" class="header_search" placeholder="Поиск">
+                    </form>
+                </div>
+            </header>
+            
+            
+            <div class="location">
+                <div class="movie" >
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/8/24/ccf246a255b1bcu10a47y.jpg" class="movie_cover" alt="Рик и Морти">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average movie_average--green">8.99</div>
+                    </div>
+    
+                    <div class="movie_info">
+                        <div class="movie_title">Рик и Морти</div>
+                        <div class="movie_category">	Комедии, Фантастика, Приключения, Для взрослых, Мультсериалы</div>
+                    </div> 
+                </div> 
+    
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/6/18/adfb0924c7024yu51k84z.jpg" class="movie_cover" alt="Кот в сапогах 2: Последнее желание">
+                        <div class="movie_cover--darkened"></div>
+                       <div class="movie_average movie_average--green">8.17</div> 
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Кот в сапогах 2: Последнее желание</div>
+                        <div class="movie_category">	Комедии, Приключения</div>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/5/9/wdbba64d66b0avl93x89n.jpg" class="movie_cover" alt="Любовь, смерть и роботы">
+                        <div class="movie_cover--darkened"></div>
+                      <div class="movie_average movie_average--green">8.25</div>
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Любовь, смерть и роботы</div>
+                        <div class="movie_category">		Фантастика, Приключения, Ужасы, Триллеры, Драмы, Комедии, Боевики, Для взрослых, Короткометражные</div>
+                    </div>
+                </div> 
+    
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/7/11/ic47e1b376b6daj45z68e.jpg" class="movie_cover" alt="Удача">
+                        <div class="movie_cover--darkened"></div>
+                       <div class="movie_average movie_average--green">7.32</div> 
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Удача</div>
+                        <div class="movie_category">		Фэнтези, Приключения, Комедии, Семейные, Полнометражные</div>
+                    </div>
+                </div> 
+    
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2023/1/22/z74d25f101515db41d86v.jpg" class="movie_cover" alt="Киллер Севен">
+                        <div class="movie_cover--darkened"></div>
+                      <div class="movie_average movie_average--green">8.03</div>
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Киллер Севен</div>
+                        <div class="movie_category">		Боевики, Приключения, Комедии, Для взрослых</div>
+                    </div> 
+                </div>  
+    
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/5/4/r75af4d80a34ehn11s82h.jpg" class="movie_cover" alt="Плохие парни">
+                        <div class="movie_cover--darkened"></div>
+                      <div class="movie_average movie_average--green">7.25</div>
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Плохие парни</div>
+                        <div class="movie_category">		Приключения, Комедии, Криминал, Семейные, Полнометражные</div>
+                    </div> 
+                </div>  
+    
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2016/1/22/z5efa104eec60zr19g11s.jpg" class="movie_cover" alt="Зверополис">
+                        <div class="movie_cover--darkened"></div>
+                      <div class="movie_average movie_average--green">8.31</div> 
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Зверополис</div>
+                        <div class="movie_category">		Комедии, Криминал, Детективы, Приключения, Семейные, Полнометражные</div>
+                    </div>
+                </div> 
+    
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2014/2/28/m1a588485566efa43k82h.jpg" class="movie_cover" alt="Холодное сердце">
+                        <div class="movie_cover--darkened"></div>
+                      <div class="movie_average movie_average--green">7.87</div> 
+                    </div>
+    
+                    <div class="movie_info">
+                        <div class="movie_title">Холодное сердце </div>
+                        <div class="movie_category">			Фэнтези, Комедии, Драмы, Приключения, Семейные, Полнометражные</div>
+                    </div>  
+                </div> 
+    
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/11/19/h86634b7cb5b9zu14m62z.jpg" class="movie_cover" alt="Корпорация «Заговор»">
+                        <div class="movie_cover--darkened"></div>
+                      <div class="movie_average movie_average--green">7.87</div> 
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Корпорация «Заговор» </div>
+                        <div class="movie_category">				Фантастика, Фэнтези, Комедии, Для взрослых, Мультсериалы</div>
+                    </div> 
+                </div>
+            </div>  
+        </div>
+        <!--Trailers tab-->
+        <div class="promo__content hide">
+            <header class="header">
+                <div class="header_content">
+                    <a href="index.html" class="header_logo"></a>
+                    <form>
+                        <input type="text" class="header_search" placeholder="Поиск">
+                    </form>
+                </div>
+            </header>
+             
+            <div class="location">
+                <div class="movie" >
+                    <div class="movie_cover-inner">
+                        <img src="https://www.thewrap.com/wp-content/uploads/2023/02/The-Flash-Movie-Poster-1-691x1024.jpg" class="movie_cover" alt="Флэш">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average_rs movie_average--green">Анонс</div>  
+                    </div>
+              
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Флэш</div>
+                        <div class="movie_category">		Боевики, Приключения, Фантастика, Драмы</div>
+                    </div> 
+                </div>
+            
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2023/2/13/n2dddc8b44503pt91r99j.jpg" class="movie_cover" alt="Форсаж 10">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average_rs movie_average--green">Анонс</div>  
+                    </div>
+           
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Форсаж 10</div>
+                        <div class="movie_category">		Боевики, Приключения, Детективы, Триллеры, Криминал</div>
+                    </div>  
+                </div>
+            
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2023/1/18/y6e04528a82c2pr44o93o.jpg" class="movie_cover" alt="Человек-муравей и Оса: Квантомания">
+                        <div class="movie_cover--darkened"></div>
+                      <div class="movie_average_rs movie_average--green">Анонс</div>  
+                    </div>
+                
+
+                    <div class="movie_info">
+                        <div class="movie_title">Человек-муравей и Оса: Квантомания</div>
+                        <div class="movie_category">		Боевики, Приключения, Фантастика, Детективы, Триллеры, Комедии</div>
+                    </div>   
+                </div>
+            
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2023/1/12/fc76f290325d3hb78w91t.jpg" class="movie_cover" alt="Бо боится">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average_rs movie_average--green">Анонс</div> 
+                    </div>
+                
+
+                    <div class="movie_info">
+                        <div class="movie_title">Бо боится</div>
+                        <div class="movie_category">			Драмы, Комедии, Детективы, Ужасы</div>
+                    </div> 
+                </div>
+            
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/12/11/l59b8dd40eaa6pm77l90j.jpg" class="movie_cover" alt="Джон Уик 4">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average_rs movie_average--green">Анонс</div>  
+                    </div>
+                
+
+                    <div class="movie_info">
+                        <div class="movie_title">Джон Уик 4</div>
+                        <div class="movie_category">		Боевики, Триллеры, Криминал</div>
+                    </div>
+                </div>
+            
+               
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2023/2/17/z88df14f4a9bceh77u58j.jpg" class="movie_cover" alt="Крид 3">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average_rs movie_average--green">Анонс</div>  
+                    </div>
+                
+
+                    <div class="movie_info">
+                        <div class="movie_title">Крид 3</div>
+                        <div class="movie_category">		Драмы, Спортивные</div>
+                    </div>
+                </div>
+
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2022/12/14/z12c9fd676a10lc52n77k.jpg" class="movie_cover" alt="Индиана Джонс и часы судьбы">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average_rs movie_average--green">Анонс</div> 
+                    </div>
+                
+
+                    <div class="movie_info">
+                        <div class="movie_title">Индиана Джонс и часы судьбы</div>
+                        <div class="movie_category">		Боевики, Приключения, Детективы, Фэнтези, Комедии</div>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2023/1/7/caf83fd44e026qn94w93n.jpg" class="movie_cover" alt="Ренфилд">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average_rs movie_average--green">Анонс</div> 
+                    </div>
+                
+
+                    <div class="movie_info">
+                        <div class="movie_title">Ренфилд </div>
+                        <div class="movie_category">		Ужасы, Комедии</div>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie_cover-inner">
+                        <img src="https://static.hdrezka.ac/i/2023/1/14/qb787ae098aafbi80y60i.jpg" class="movie_cover" alt="Астерикс и Обеликс: Поднебесная">
+                        <div class="movie_cover--darkened"></div>
+                        <div class="movie_average_rs movie_average--green">Анонс</div> 
+                    </div>
+                
+                    <div class="movie_info">
+                        <div class="movie_title">Астерикс и Обеликс: Поднебесная </div>
+                        <div class="movie_category">			Комедии, Приключения, Семейные</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="modal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <form action="#">
+                        <div class="modal__close" data-close>&times;</div>
+                        <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                        <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                        <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                        <button class="btn btn_dark btn_min">Перезвонить мне</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <datalist id="varieties">
+            <option value="Spider-Man: Far from home"></option>
+            <option value="Menu"></option>
+            <option value="Puss in Boots: The Last Wish"></option>
+            <option value="The Last of Us"></option>
+        </datalist>
+    </main>
+</body>
+</html>
